@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom'
+import { useState } from 'react'
 import Home from './pages/Home'
 import Experience from './pages/Experience'
 import About from './pages/About'
@@ -7,10 +8,21 @@ import './App.css'
 
 function Sidebar() {
   const location = useLocation()
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   
   return (
-    <div className="sidebar">
-      <div className="profile-section">
+    <>
+      <button 
+        className="mobile-menu-toggle"
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div className={`sidebar ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+        <div className="profile-section">
         <div className="profile-image">
           <img src="/profile.jpg" alt="Anish" className="profile-img" />
         </div>
@@ -111,9 +123,17 @@ function Sidebar() {
             </svg>
           </a>
         </div>
+        </div>
       </div>
-    </div>
-  )
+      
+      {isMobileMenuOpen && (
+        <div 
+          className="mobile-overlay"
+          onClick={() => setIsMobileMenuOpen(false)}
+        ></div>
+      )}
+    </>
+    )
 }
 
 function MainContent() {

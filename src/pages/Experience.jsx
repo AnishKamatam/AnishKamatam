@@ -109,31 +109,32 @@ function Experience() {
          ))}
        </div>
       
-       <div className="content-section">
-         {/* Job details for each timeline node */}
-         {timelineNodes.map((node) => (
-           <div 
-             key={`job-${node.id}`} 
-             className="experience-details" 
-             style={{ top: `${80 + node.position - 130}px` }}
-           >
-             <div className="job-detail">
-               <h3 className="job-title">{node.jobTitle}</h3>
-               <p className="job-description">{node.description}</p>
-               <ul className="job-responsibilities">
-                 {node.responsibilities.map((responsibility, index) => (
-                   <li key={index}>{responsibility}</li>
-                 ))}
-               </ul>
-               <div className="tech-stack">
-                 {node.techStack.map((tech, index) => (
-                   <span key={index} className="tech-tag">{tech}</span>
-                 ))}
-               </div>
-             </div>
-           </div>
-         ))}
-       </div>
+                <div className="content-section">
+                  {/* Job details for each timeline node */}
+                  {timelineNodes.map((node) => (
+                    <div 
+                      key={`job-${node.id}`} 
+                      className="experience-details" 
+                      style={{ top: `${80 + node.position - 130}px` }}
+                    >
+                      <div className="job-detail">
+                        <div className="timeline-date">{node.date}</div>
+                        <h3 className="job-title">{node.jobTitle}</h3>
+                        <p className="job-description">{node.description}</p>
+                        <ul className="job-responsibilities">
+                          {node.responsibilities.map((responsibility, index) => (
+                            <li key={index}>{responsibility}</li>
+                          ))}
+                        </ul>
+                        <div className="tech-stack">
+                          {node.techStack.map((tech, index) => (
+                            <span key={index} className="tech-tag">{tech}</span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
     </div>
   )
 }
