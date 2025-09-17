@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 function Home() {
   const [displayText, setDisplayText] = useState('')
@@ -69,18 +70,18 @@ function Home() {
         
         <div className="contact-text">
           <p>You can talk to me about <strong>AI</strong>, <strong>new ideas</strong>, <strong>life</strong>, or <strong>anything else</strong>.</p>
-          <p>Say Hi on <a href="#" className="link underline">X</a></p>
+          <p>Say Hi on <a href="https://x.com/AnishKamatam22" target="_blank" rel="noopener noreferrer" className="link underline">X</a></p>
         </div>
         
         <div className="contact-buttons">
-          <button className="contact-btn primary">Contact</button>
-          <button className="contact-btn secondary">
+          <Link to="/contact" className="contact-btn primary">Contact</Link>
+          <a href="mailto:anishkamatam22@gmail.com" className="contact-btn secondary">
             <svg className="email-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <rect x="2" y="4" width="20" height="16" rx="2"/>
               <path d="m22 7-10 5L2 7"/>
             </svg>
             E-Mail
-          </button>
+          </a>
         </div>
       </div>
     </div>
