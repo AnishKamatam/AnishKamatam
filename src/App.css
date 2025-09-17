@@ -90,6 +90,8 @@ html, body {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-item:hover {
@@ -179,6 +181,15 @@ html, body {
   padding: 60px 80px;
   overflow-y: auto;
   position: relative;
+}
+
+.main-content.experience-page {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 80px 100px;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
 }
 
 .hero-section {
@@ -359,6 +370,159 @@ html, body {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.experience-container {
+  max-width: 600px;
+  margin-left: 300px;
+  margin-top: 20px;
+}
+
+.experience-container .hero-title {
+  font-size: 36px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.experience-container .hero-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.experience-container .hero-timeline-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.hero-line {
+  width: 3px;
+  background-color: #8B5CF6;
+  margin-top: 80px;
+  margin-left: 20px;
+  border-radius: 1px;
+  position: absolute;
+  transition: height 0.1s ease-out;
+  z-index: 10;
+}
+
+.background-line {
+  width: 2px;
+  height: 800px;
+  background-color: #e5e5e5;
+  margin-top: 80px;
+  margin-left: 20.5px;
+  border-radius: 1px;
+  position: absolute;
+  z-index: 5;
+}
+
+.animated-line {
+  background: linear-gradient(to bottom, #8B5CF6, #8B5CF6 80%, rgba(139, 92, 246, 0.3));
+}
+
+.timeline-item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 15;
+}
+
+.timeline-node {
+  width: 16px;
+  height: 16px;
+  background-color: #8B5CF6;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  margin-left: 13px; /* Centered on the line */
+  opacity: 1;
+  box-shadow: 0 3px 12px rgba(139, 92, 246, 0.4);
+}
+
+.timeline-date {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  margin-left: 20px;
+  white-space: nowrap;
+  font-family: 'Inter', sans-serif;
+}
+
+.experience-details {
+  position: absolute;
+  left: 450px;
+  top: 100px;
+  width: 600px;
+  z-index: 20;
+}
+
+.job-detail {
+  margin-bottom: 40px;
+}
+
+.job-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.job-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 24px;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+.job-responsibilities {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.job-responsibilities li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+}
+
+.job-responsibilities li::before {
+  content: "•";
+  color: #8B5CF6;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  background-color: #E0F2FE;
+  color: #0369A1;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
 }
 
 .shooting-stars-background {
