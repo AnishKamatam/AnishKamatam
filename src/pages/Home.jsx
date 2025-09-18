@@ -64,7 +64,7 @@ function Home() {
           <ul className="experience-list">
             <li>– As an AI Engineer at FundMore AI, designed natural-language to SQL analytics on Vertex AI, enabling secure queries with zero tenant leakage.</li>
             <li>– Founded AGNI X, developing autonomous drones that use edge AI and thermal vision for early wildfire detection.</li>
-            <li>– Led hackathon-winning projects like ViewLingo (smart glasses for immersive language learning) and Sentra (AI disaster response system).</li>
+            <li>– Led hackathon-winning projects like ViewLingo (smart glasses for immersive language learning) and MedWise (Graph-RAG Semantic Retrieval for Brand-to-Generic Drug Mapping).</li>
           </ul>
         </div>
         

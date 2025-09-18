@@ -32,6 +32,8 @@ html, body {
   padding: 20px;
   position: relative;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-section {
@@ -968,6 +970,16 @@ html, body {
   height: 20px;
 }
 
+/* Resume Download Button */
+.resume-section {
+  margin-top: auto;
+  padding: 0 20px 0 20px;
+}
+
+.resume-download {
+  margin-top: 8px;
+}
+
 /* Mobile Menu Toggle - Hidden on Desktop */
 .mobile-menu-toggle {
   display: none;
@@ -1124,6 +1136,12 @@ html, body {
   .external-icon {
     width: 12px;
     height: 12px;
+  }
+
+  /* Resume Download Button Mobile */
+  .resume-section {
+    padding: 20px;
+    margin-top: auto;
   }
 
   /* Home Page Mobile */
