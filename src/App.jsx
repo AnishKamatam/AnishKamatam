@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Experience from './pages/Experience'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Projects from './pages/Projects'
 import './App.css'
 
 function Sidebar() {
@@ -48,14 +49,14 @@ function Sidebar() {
           </svg>
           <span className="nav-text">Experience</span>
         </Link>
-        <div className="nav-item">
-          <svg className="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-            <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
-            <line x1="12" y1="22.08" x2="12" y2="12"/>
-          </svg>
-          <span className="nav-text">Projects</span>
-        </div>
+                 <Link to="/projects" className={`nav-item ${location.pathname === '/projects' ? 'active' : ''}`}>
+                   <svg className="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                     <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                     <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                     <line x1="12" y1="22.08" x2="12" y2="12"/>
+                   </svg>
+                   <span className="nav-text">Projects</span>
+                 </Link>
         <Link to="/about" className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}>
           <svg className="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
@@ -141,12 +142,13 @@ function MainContent() {
   
   return (
     <div className={`main-content ${location.pathname === '/experience' ? 'experience-page' : ''}`}>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+               <Routes>
+                 <Route path="/" element={<Home />} />
+                 <Route path="/experience" element={<Experience />} />
+                 <Route path="/projects" element={<Projects />} />
+                 <Route path="/about" element={<About />} />
+                 <Route path="/contact" element={<Contact />} />
+               </Routes>
     </div>
   )
 }
