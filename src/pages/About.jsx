@@ -20,14 +20,14 @@ function About() {
         <div className="about-section">
           <h2 className="section-title">Who I Am</h2>
           <p className="section-text">
-            Hello! I'm Anish, a student at Califoria State University, Chico passionate about building intelligent systems that bridge the gap between research and real-world impact. I've been coding since 2018, working across AI, full-stack development, and autonomous systems.
+            Hello! I'm Anish, a student at California State University, Chico passionate about building intelligent systems that bridge the gap between research and real-world impact. I've been coding since 2018, working across AI, full-stack development, and autonomous systems.
           </p>
         </div>
 
         <div className="about-section">
           <h2 className="section-title">What I Do</h2>
           <p className="section-text">
-           Currently an AI Engineer at FundMore AI, working on automated underwriting for loans and mortages, and Lead ML Engineer at AGNI X, building autonomous drones for wildfire detection and spread modeling.
+           Currently an AI Engineer at FundMore AI, working on automated underwriting for loans and mortgages, and Lead ML Engineer at AGNI X, building autonomous drones for wildfire detection and spread modeling.
           </p>
         </div>
 
