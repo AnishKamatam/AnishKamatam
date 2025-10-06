@@ -43,7 +43,8 @@ function Projects() {
       title: "AGNI X",
       description: "An autonomous drone platform for early wildfire detection and tactical support. AGNI X combines thermal vision, LiDAR mapping, and onboard modeling to identify fire risks, track spread patterns, and send GPS-based alerts to first responders in real time.",
       buttons: [
-        { text: "Visit", type: "primary", link: "https://agnix.tech" }
+        { text: "Visit", type: "primary", link: "https://agnix.tech" },
+        { text: "Paper", type: "secondary", link: "/Autonomous_Drone_Systems_for_Low_Cost_Early_Wildfire_Detection_and_Tactical_Response.pdf" }
       ],
       status: "active",
       tags: ["AI", "Drones", "Wildfire Detection", "DeepTech", "Climate Resilience"]
