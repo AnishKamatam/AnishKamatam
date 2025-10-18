@@ -27,6 +27,19 @@ function Experience() {
     { 
       id: 1, 
       position: 150, 
+      label: "Started Research at UC Berkeley", 
+      date: "October 2025 - Present",
+      jobTitle: "Undergraduate Research Assistant • UC Berkeley Network and Systems Lab",
+      description: "Bandwidth Allocation for Cloud-Augmented Autonomous Drones",
+      responsibilities: [
+        "Implemented bandwidth-aware offloading for autonomous drone perception pipelines, reducing end-to-end latency by 24% and enabling deployment of vision models 3.1× larger than onboard limits.",
+        "Designed and evaluated real-time network allocation algorithms under 5G constraints, improving decision reliability by 31% and perception accuracy by 15% across 1000+ flight simulations."
+      ],
+      techStack: ["Python", "C++", "FogROS2", "QoS scheduling", "Network Optimization"]
+    },
+    { 
+      id: 2, 
+      position: 550, 
       label: "Started at FundMore AI", 
       date: "May 2025 - Present",
       jobTitle: "AI Engineer • FundMore AI",
@@ -39,8 +52,8 @@ function Experience() {
       techStack: ["Python", "SQL", "Vertex AI", "GCP", "Angular", "Node.js", "Sequelize"]
     },
     { 
-      id: 2, 
-      position: 550, 
+      id: 3, 
+      position: 950, 
       label: "Built SQL Analytics System", 
       date: "June 2025 - August 2025",
       jobTitle: "Data Science Extern • Amazon",
@@ -53,8 +66,8 @@ function Experience() {
       techStack: ["Python", "LightGBM", "MiniLM", "NLP", "scikit-learn", "SHAP"]
     },
     { 
-      id: 3, 
-      position: 950, 
+      id: 4, 
+      position: 1350, 
       label: "Founded AGNI X", 
       date: "April 2025 - Present",
       jobTitle: "AGNI X • Lead ML Engineer",
@@ -66,8 +79,8 @@ function Experience() {
       techStack: ["Python", "C++", "PyTorch", "YOLOv8", "OpenCV", "CUDA", "Jetson", "Flask", "Next.js"]
     },
     { 
-      id: 4, 
-      position: 1350, 
+      id: 5, 
+      position: 1750, 
       label: "Led Hackathon Projects", 
       date: "May 2024 - Sep 2024",
       jobTitle: "Software Engineer Intern • TraceCloud",
