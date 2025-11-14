@@ -20,13 +20,27 @@ function Experience() {
   }, [])
 
   // Calculate line height based on scroll position - only show when scrolling
-  const lineHeight = scrollY > 10 ? Math.min(scrollY * 3, 2000) : 0
+  const lineHeight = scrollY > 10 ? Math.min(scrollY * 3, 3000) : 0
   
   // Define timeline nodes at specific positions
   const timelineNodes = [
     { 
       id: 1, 
       position: 150, 
+      label: "Started at FoodHealth Company", 
+      date: "Nov 2025 - Present",
+      jobTitle: "AI/ML Intern • FoodHealth Company",
+      description: "ML + Agentic AI Systems for Nutrition Intelligence Applications (Kroger, Albertsons, etc.)",
+      responsibilities: [
+        "Trained XGBoost classifiers and regressors on large-scale tabular datasets, optimizing hyperparameters with Optuna for low-latency inference.",
+        "Implemented a feature pipeline with quantile scaling, target-encoded categorical variables, and polynomial interaction terms optimized for tree-based models.",
+        "Built a model audit suite combining SHAP value decomposition, 5-fold cross-validation, and KS-statistic drift checks to validate boosted model stability."
+      ],
+      techStack: ["XGBoost", "Optuna (Hyperparameter Optimization)", "scikit-learn", "LightGBM", "Model Development", "Feature Engineering", "Tree-Based Models", "Python"]
+    },
+    { 
+      id: 2, 
+      position: 550, 
       label: "Started Research at UC Berkeley", 
       date: "October 2025 - Present",
       jobTitle: "Undergraduate Research Assistant • UC Berkeley Network and Systems Lab",
@@ -35,13 +49,13 @@ function Experience() {
         "Implemented bandwidth-aware offloading for autonomous drone perception pipelines, reducing end-to-end latency by 24% and enabling deployment of vision models 3.1× larger than onboard limits.",
         "Designed and evaluated real-time network allocation algorithms under 5G constraints, improving decision reliability by 31% and perception accuracy by 15% across 1000+ flight simulations."
       ],
-      techStack: ["Python", "C++", "FogROS2", "QoS scheduling", "Network Optimization"]
+      techStack: ["Computer Networking", "Bandwidth Management", "Python", "Cloud Robotics", "C++", "Applied AI", "Autonomous Vehicles", "Network Simulation", "TensorRT", "CUDA"]
     },
     { 
-      id: 2, 
-      position: 550, 
+      id: 3, 
+      position: 950, 
       label: "Started at FundMore AI", 
-      date: "May 2025 - Present",
+      date: "May 2025 - Nov 2025",
       jobTitle: "AI Engineer • FundMore AI",
       description: "Automated Underwriting For Loans and Mortgages",
       responsibilities: [
@@ -49,11 +63,11 @@ function Experience() {
         "Developed a multi-tenant AI assistant using TypeScript, Angular, Node.js, and Sequelize, serving 1,000+ users across 50+ organizations.",
         "Built a dynamic mentions system to enrich LLM prompts with structured context, improving response relevance for metrics queries by 30%, enhancing system transparency for end users."
       ],
-      techStack: ["Python", "SQL", "Vertex AI", "GCP", "Angular", "Node.js", "Sequelize"]
+      techStack: ["Google Cloud Platform (GCP)", "AWS Lambda", "PostgreSQL", "Natural Language Processing (NLP)", "REST APIs", "Backend Engineering", "Amazon SQS", "Node.js", "Large Language Models (LLM)", "TypeScript", "Applied AI", "Git"]
     },
     { 
-      id: 3, 
-      position: 950, 
+      id: 4, 
+      position: 1350, 
       label: "Built SQL Analytics System", 
       date: "June 2025 - August 2025",
       jobTitle: "Data Science Extern • Amazon",
@@ -66,8 +80,8 @@ function Experience() {
       techStack: ["Python", "LightGBM", "MiniLM", "NLP", "scikit-learn", "SHAP"]
     },
     { 
-      id: 4, 
-      position: 1350, 
+      id: 5, 
+      position: 1750, 
       label: "Founded AGNI X", 
       date: "April 2025 - Present",
       jobTitle: "AGNI X • Lead ML Engineer",
@@ -76,11 +90,11 @@ function Experience() {
         "Developed an autonomous drone system for early wildfire detection and structural fire assessment using thermal imaging, computer vision, and 3D modeling using LiDar sensors.",
         "Built and optimized real-time computer vision models with YOLOv8 and custom CNN pipelines on NVIDIA Jetson Nano, enabling onboard fire detection, classification, and risk prioritization."
       ],
-      techStack: ["Python", "C++", "PyTorch", "YOLOv8", "OpenCV", "CUDA", "Jetson", "Flask", "Next.js"]
+      techStack: ["Embedded Systems", "PyTorch", "Python", "C++", "Computer Vision", "TensorFlow", "Deep Learning", "Applied AI", "Applied Machine Learning"]
     },
     { 
-      id: 5, 
-      position: 1750, 
+      id: 6, 
+      position: 2150, 
       label: "Led Hackathon Projects", 
       date: "May 2024 - Sep 2024",
       jobTitle: "Software Engineer Intern • TraceCloud",
@@ -89,7 +103,7 @@ function Experience() {
         "Engineered a GraphRAG pipeline that modeled requirements, dependencies, and Jira artifacts as graph embeddings, enabling low-latency semantic retrieval and cutting manual trace analysis by 30%.",
         "Optimized backend services to handle real-time log ingestion at scale, resolving 3+ performance bottlenecks and improving system throughput."
       ],
-      techStack: ["Python", "Neo4j", "Flask", "REST APIs"]
+      techStack: ["REST APIs", "Backend Engineering", "Continuous Integration and Continuous Delivery (CI/CD)", "Cloud Infrastructure", "Large Language Models (LLM)", "TypeScript", "Back-End Web Development", "Applied AI", "Retrieval-Augmented Generation (RAG)"]
     }
   ]
   
@@ -99,7 +113,7 @@ function Experience() {
     <div className="text-container experience-container">
        <div className="hero-section">
          <h1 className="hero-title">Changelog from my journey</h1>
-         <h2 className="hero-subtitle">I've been working at FundMore AI for the past 6 months.</h2>
+         <h2 className="hero-subtitle">I've been working at FoodHealth Company.</h2>
          <p className="hero-timeline-text">Here's a timeline of my journey.</p>
          {/* Background grey line - always visible */}
          <div className="background-line"></div>

@@ -12,7 +12,8 @@ function Home() {
     'Full Stack Developer',
     'Machine Learning Engineer',
     'Data Scientist',
-    'Tech Lead'
+    'AI/ML Researcher',
+    'Applied AI Engineer'
   ]
 
   useEffect(() => {
@@ -58,7 +59,7 @@ function Home() {
         <div className="intro-text">
           <p>I build end-to-end AI products, from messy concepts to production-ready systems.</p>
           
-          <p>Currently focused on building autonomous drones for wildfire detection and spread modeling, and working as an AI Engineer at FundMore AI</p>
+          <p>Currently researching bandwidth-aware cloud robotics for autonomous drones at UC Berkeley, and working as an AI/ML Intern at FoodHealth on machine learning systems for nutrition intelligence.</p>
           
           <p>In the past few years I have:</p>
           <ul className="experience-list">

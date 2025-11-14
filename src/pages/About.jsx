@@ -27,14 +27,14 @@ function About() {
         <div className="about-section">
           <h2 className="section-title">What I Do</h2>
           <p className="section-text">
-           Currently an AI Engineer at FundMore AI, working on automated underwriting for loans and mortgages, and Lead ML Engineer at AGNI X, building autonomous drones for wildfire detection and spread modeling.
+          Currently an AI/ML Intern at FoodHealth, working on machine learning systems for nutrition intelligence, and a Research Assistant at UC Berkeley focusing on cloud-augmented autonomy and bandwidth-aware offloading for drones..
           </p>
         </div>
 
         <div className="about-section">
           <h2 className="section-title">My Journey</h2>
           <p className="section-text">
-          AI Engineer at FundMore AI, Lead ML Engineer at AGNI X, Data Science Extern at Amazon, and Software Engineer Intern at TraceCloud, building AI systems from automated underwriting to autonomous wildfire detection.
+          AI/ML Intern at FoodHealth, Research Assistant at UC Berkeley, AI Engineer at FundMore AI, Lead ML Engineer at AGNI X, Data Science Extern at Amazon, and Software Engineer Intern at TraceCloud, building AI systems from automated underwriting to autonomous wildfire detection.
           </p>
         </div>
 
