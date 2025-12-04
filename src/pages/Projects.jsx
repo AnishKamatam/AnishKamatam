@@ -50,6 +50,29 @@ function Projects() {
       tags: ["AI", "Drones", "Wildfire Detection", "DeepTech", "Climate Resilience"]
     },
     {
+      id: 7,
+      title: "Wizard",
+      description: "A command line AI tool that explains and fixes errors as they happen. Wizard monitors your terminal, identifies issues, and returns clear explanations, root causes, recommended fixes, and links to helpful discussions. It uses an agentic workflow so it feels like a real debugging partner that adapts to your environment over time.",
+      buttons: [
+        { text: "GitHub", type: "secondary", link: "https://github.com/AnishKamatam/wizard" }
+      ],
+      workInProgress: true,
+      status: "active",
+      tags: ["AI", "Developer Tools", "CLI", "Debugging", "Automation", "Agents", "Developer Experience"]
+    },
+    {
+      id: 6,
+      title: "Anish's Notes",
+      description: "A growing collection of the concepts, lectures, and systems I am learning. This includes machine learning theory, robotics, systems design, and agent architectures. Anish's Notes is my personal learning hub that documents how I break down complex ideas into something practical and easy to understand. I update it as I work through courses, research, and new projects.",
+      buttons: [
+        { text: "Visit", type: "primary", link: "https://anishkamatam.github.io/anishsnotes/" },
+        { text: "GitHub", type: "secondary", link: "https://github.com/AnishKamatam/anishsnotes" }
+      ],
+      workInProgress: true,
+      status: "active",
+      tags: ["Learning", "ML Theory", "Systems", "Robotics", "Notes", "Education", "Knowledge Base"]
+    },
+    {
       id: 5,
       title: "Equinox",
       description: "A modern inventory management system built for brick and mortar businesses. Equinox helps store owners track stock levels, identify gaps, and generate insights through natural language search and automated visualizations, making inventory control faster, simpler, and more transparent.",
@@ -76,6 +99,9 @@ function Projects() {
                 <h3 className="project-title">{project.title}</h3>
                 {project.award && (
                   <div className="project-award">{project.award}</div>
+                )}
+                {project.workInProgress && (
+                  <div className="project-work-in-progress">Work in Progress</div>
                 )}
               </div>
               <p className="project-description">{project.description}</p>

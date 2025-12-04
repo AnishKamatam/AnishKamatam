@@ -1435,6 +1435,18 @@ html, body {
   margin-bottom: 8px;
 }
 
+.project-work-in-progress {
+  background-color: #ea3939;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
 .project-description {
   font-size: 14px;
   color: #666;
