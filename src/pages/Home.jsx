@@ -57,7 +57,7 @@ function Home() {
       
       <div className="content-section">
         <div className="intro-text">
-          <p>I build end-to-end AI products, from messy concepts to production-ready systems.</p>
+          <p>I enjoy building products from 0 to 1, from messy concepts to production-ready systems</p>
           
           <p>Currently researching bandwidth-aware cloud robotics for autonomous drones at UC Berkeley, and working as an AI/ML Intern at FoodHealth on machine learning systems for nutrition intelligence.</p>
           

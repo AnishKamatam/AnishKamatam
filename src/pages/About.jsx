@@ -20,14 +20,14 @@ function About() {
         <div className="about-section">
           <h2 className="section-title">Who I Am</h2>
           <p className="section-text">
-            Hello! I'm Anish, a student at California State University, Chico passionate about building intelligent systems that bridge the gap between research and real-world impact. I've been coding since 2018, working across AI, full-stack development, and autonomous systems.
+           I’m a Computer Science & Math student (currently on a year off from Chico State University) who likes building things that actually work outside of a paper or a demo. I’ve been coding since 2018, mostly because I enjoy understanding how systems behave under real constraints (eg. latency, bandwidth, scale, etc.).
           </p>
         </div>
 
         <div className="about-section">
           <h2 className="section-title">What I Do</h2>
           <p className="section-text">
-          Currently an AI/ML Intern at FoodHealth, working on machine learning systems for nutrition intelligence, and a Research Assistant at UC Berkeley focusing on cloud-augmented autonomy and bandwidth-aware offloading for drones..
+          Currently an AI/ML Intern at FoodHealth, working on machine learning systems for nutrition intelligence, and a Research Assistant at UC Berkeley focusing on cloud-augmented autonomy and bandwidth-aware offloading for drones.
           </p>
         </div>
 
