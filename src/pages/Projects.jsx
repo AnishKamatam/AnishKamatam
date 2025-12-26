@@ -50,6 +50,26 @@ function Projects() {
       tags: ["AI", "Drones", "Wildfire Detection", "DeepTech", "Climate Resilience"]
     },
     {
+      id: 8,
+      title: "Edge-Infer-rs",
+      description: "High-performance, Rust-based inference engine that bridges asynchronous request streams with hardware-accelerated ML runtimes through dynamic batching and backend-agnostic execution, delivering predictable low-latency inference at the edge.",
+      buttons: [
+        { text: "GitHub", type: "secondary", link: "https://github.com/AnishKamatam/edge-infer-rs" }
+      ],
+      status: "active",
+      tags: ["Rust", "ML Inference", "Edge Computing", "Systems Engineering", "Performance Optimization", "Deep Learning"]
+    },
+    {
+      id: 9,
+      title: "Tiny-MLP",
+      description: "A minimal scalar-level autodiff engine and MLP that learns projectile motion from data, illustrating explicit computation-graph backpropagation and neural inductive bias.",
+      buttons: [
+        { text: "GitHub", type: "secondary", link: "https://github.com/AnishKamatam/tiny-mlp" }
+      ],
+      status: "active",
+      tags: ["Python", "Neural Networks", "Autodiff", "Physics", "Deep Learning", "Education"]
+    },
+    {
       id: 7,
       title: "Wizard",
       description: "A command line AI tool that explains and fixes errors as they happen. Wizard monitors your terminal, identifies issues, and returns clear explanations, root causes, recommended fixes, and links to helpful discussions. It uses an agentic workflow so it feels like a real debugging partner that adapts to your environment over time.",

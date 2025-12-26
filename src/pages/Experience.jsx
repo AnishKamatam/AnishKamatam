@@ -27,6 +27,20 @@ function Experience() {
     { 
       id: 1, 
       position: 150, 
+      label: "Started at Palantir Technologies", 
+      date: "Nov 2025 - Present",
+      jobTitle: "Software Engineer Fellow • Palantir Technologies",
+      description: "UAV data pipelines and ML inference workflows",
+      responsibilities: [
+        "Built UAV batch/streaming ML pipelines in Palantir Foundry with telemetry normalization and lineage-tracked inference outputs",
+        "Deployed YOLOv8/ResNet-50 inference and FAISS-backed RAG pipelines on Palantir AIP for maintenance triage.",
+        "Instrumented ML observability pipelines, tracking drift, data integrity, and inference reliability with Evidently inside Foundry."
+      ],
+      techStack: ["Palantir Foundry", "Palantir AIP", "YOLOv8", "ResNet-50", "FAISS", "RAG", "Evidently", "ML Observability", "Batch/Streaming ML Pipelines", "Computer Vision", "Deep Learning", "Python"]
+    },
+    { 
+      id: 2, 
+      position: 550, 
       label: "Started at FoodHealth Company", 
       date: "Nov 2025 - Present",
       jobTitle: "AI/ML Intern • FoodHealth Company",
@@ -39,8 +53,8 @@ function Experience() {
       techStack: ["XGBoost", "Optuna (Hyperparameter Optimization)", "scikit-learn", "LightGBM", "Model Development", "Feature Engineering", "Tree-Based Models", "Python"]
     },
     { 
-      id: 2, 
-      position: 550, 
+      id: 3, 
+      position: 950, 
       label: "Started Research at UC Berkeley", 
       date: "October 2025 - Present",
       jobTitle: "Undergraduate Research Assistant • UC Berkeley Network and Systems Lab",
@@ -52,8 +66,8 @@ function Experience() {
       techStack: ["Computer Networking", "Bandwidth Management", "Python", "Cloud Robotics", "C++", "Applied AI", "Autonomous Vehicles", "Network Simulation", "TensorRT", "CUDA"]
     },
     { 
-      id: 3, 
-      position: 950, 
+      id: 4, 
+      position: 1350, 
       label: "Started at FundMore AI", 
       date: "May 2025 - Nov 2025",
       jobTitle: "AI Engineer • FundMore AI",
@@ -66,8 +80,8 @@ function Experience() {
       techStack: ["Google Cloud Platform (GCP)", "AWS Lambda", "PostgreSQL", "Natural Language Processing (NLP)", "REST APIs", "Backend Engineering", "Amazon SQS", "Node.js", "Large Language Models (LLM)", "TypeScript", "Applied AI", "Git"]
     },
     { 
-      id: 4, 
-      position: 1350, 
+      id: 5, 
+      position: 1750, 
       label: "Built SQL Analytics System", 
       date: "June 2025 - August 2025",
       jobTitle: "Data Science Extern • Amazon",
@@ -80,8 +94,8 @@ function Experience() {
       techStack: ["Python", "LightGBM", "MiniLM", "NLP", "scikit-learn", "SHAP"]
     },
     { 
-      id: 5, 
-      position: 1750, 
+      id: 6, 
+      position: 2150, 
       label: "Founded AGNI X", 
       date: "April 2025 - Present",
       jobTitle: "AGNI X • Lead ML Engineer",
@@ -93,8 +107,8 @@ function Experience() {
       techStack: ["Embedded Systems", "PyTorch", "Python", "C++", "Computer Vision", "TensorFlow", "Deep Learning", "Applied AI", "Applied Machine Learning"]
     },
     { 
-      id: 6, 
-      position: 2150, 
+      id: 7, 
+      position: 2550, 
       label: "Led Hackathon Projects", 
       date: "May 2024 - Sep 2024",
       jobTitle: "Software Engineer Intern • TraceCloud",
@@ -113,7 +127,7 @@ function Experience() {
     <div className="text-container experience-container">
        <div className="hero-section">
          <h1 className="hero-title">Changelog from my journey</h1>
-         <h2 className="hero-subtitle">I've been working at FoodHealth Company.</h2>
+         <h2 className="hero-subtitle">I've been working at Palantir Technologies.</h2>
          <p className="hero-timeline-text">Here's a timeline of my journey.</p>
          {/* Background grey line - always visible */}
          <div className="background-line"></div>
